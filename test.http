@@ -1,0 +1,48 @@
+### Create Company
+POST http://localhost:9088/api/companies
+Content-Type: application/json
+
+{
+  "companyName": "TCS",
+  "email": "tcs@gmail.com",
+  "phone": "9876543210",
+  "website": "www.tcs.com",
+  "industry": "IT",
+  "gstNumber": "GST12345",
+  "address": "Chennai Main Road",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "postalCode": "600001",
+  "status": "Active"
+}
+
+### Get All Companies
+GET http://localhost:9088/api/companies
+
+
+### Get Company By Id
+GET http://localhost:9088/api/companies/1
+
+
+### Update Company
+PUT http://localhost:9088/api/companies/1
+Content-Type: application/json
+
+{
+  "companyName": "TCS Updated",
+  "email": "tcsupdated@gmail.com",
+  "phone": "9876543210",
+  "website": "www.tcs.com",
+  "industry": "IT",
+  "gstNumber": "GST12345",
+  "address": "Updated Address",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "postalCode": "600001",
+  "status": "Inactive"
+}
+
+### Delete Company
+DELETE http://localhost:9088/api/companies/1
